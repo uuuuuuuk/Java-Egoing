@@ -23,7 +23,7 @@ public class EqualDemo {
 ```
 <br><br>
 ## **2. !=**
-**" ! "** 는 부정을 의미합니다. 즉, '같다'의 부정은 '같지 않다'이므로 이것을 기호로는 **" != "** 로 표시합니다. 아래의 코드는 != 에 대한 코드인데 ==와 정반대의 결과를 보여줍니다.
+**" ! "** 는 부정을 의미합니다. 즉, '같다'의 부정은 '같지 않다'이므로 이것을 기호로는 **" != "** 로 표시합니다. 아래의 코드는 != 에 대한 코드인데 == 와 정반대의 결과를 보여줍니다.
 <br>
 ```
 public class NotDemo {
@@ -35,5 +35,37 @@ public class NotDemo {
         System.out.println("one"!="one");   //false
     }
      
+}
+```
+<br><br>
+## **3. >**
+좌항이 우항보다 크다면 참, 그렇지 않다면 거짓임을 알려주는 연산자입니다. '<'는 반대의 의미로 작다면 참, 그렇지 않다면 거짓을 출력합니다.
+<br>
+```
+public class GreaterThanDemo {
+ 
+    public static void main(String[] args) {
+        System.out.println(10>20);       //false
+        System.out.println(10>2);            //true
+        System.out.println(10>10);           //false
+ 
+    }
+ 
+}
+```
+<br><br>
+## **3. >=**
+좌항이 우항보다 크거나 같다면 참, 그렇지 않다면 거짓임을 알려주는 연산자입니다. **" <= "** 는 반대의 의미로 작거나 같다면 참, 그렇지 않다면 거짓을 출력합니다.
+```
+public class GreaterThanOrEqualDemo {
+ 
+    public static void main(String[] args) {
+ 
+        System.out.println(10 >= 20); // false
+        System.out.println(10 >= 2); // true
+        System.out.println(10 >= 10); // true
+ 
+    }
+ 
 }
 ```
