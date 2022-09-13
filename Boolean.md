@@ -69,3 +69,20 @@ public class GreaterThanOrEqualDemo {
  
 }
 ```
+<br><br>
+## **4. .equals**
+.equals는 **문자열을 비교할 때 사용하는 메소드** 이지만 연산자로 이해해도 무방합니다.
+
+```
+public class EqualStringDemo {
+ 
+    public static void main(String[] args) {
+        String a = "Hello world";
+        String b = new String("Hello world");
+        System.out.println(a == b);
+        System.out.println(a.equals(b));
+    }
+ 
+}
+```
+해당 코드에서는 변수 a와 b에 각각 문자열을 생성해서 저장했습니다. 변수 b에 문자열을 만드는 방법은 생성자를 이용하고 있는데 먼저 코드의 결과는 false와 true입니다. == 은 두개의 데이터 타입이 동일한 객체인지를 알아내기 위해서 사용하는 연산자이기 때문에 b에 담긴 객체와는 일치하지 않는 것인데 이를 보완하는 비교 방법이 equals이고 이를 이용해서 **서로 다른 객체들간에 값이 같은지** 를 비교할 수 있습니다.
