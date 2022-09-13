@@ -113,8 +113,6 @@ public class ElseDemo {
 ## **1-3. 중첩 if**
 하나의 코드에서 2번, 또는 여러번의 검사를 실행해야 한다면 어떻게 해야할까요? 이럴 때 사용하는 것이 바로 중첩 if 문 입니다. 아래 코드를 보겠습니다.
 
-<br>
-
 ```
 public class ifinif {
     public static void main(String[] args) {
@@ -133,4 +131,217 @@ public class ifinif {
     }
 }
 ``` 
-해당 코드에서는 문자열 변수인 id , password 가 모두 옳은 값이여야만 **" right "** 를 출력하고 나머지는 모두 " wrong " 을 출력하게 됩니다. 이렇게 **if 문 안에 if문을 넣어 조건을 여러번 검수 하는 방법** 을 중첩 if 라고 합니다.
+해당 코드에서는 문자열 변수인 id , password 가 모두 옳은 값이여야만 **" right "** 를 출력하고 나머지는 모두 " wrong " 을 출력하게 됩니다. 이렇게 **if 문 안에 if문을 넣어 조건을 여러번 검수 하는 방법** 을 중첩 if 라고 합니다.  
+
+<br><br>
+## **2. switch**
+조건문의 대표적인 문법은 if 문 이지만 사용빈도는 적고, 조건이 많은 경우에는 switch 문을 사용해 로직을 보다 명료하게 표현할 수 있습니다.  
+<br>
+```
+public class SwitchDemo {
+ 
+    public static void main(String[] args) {
+         
+        System.out.println("switch(1)");
+        switch(1){
+        case 1:
+            System.out.println("one");
+        case 2:
+            System.out.println("two");
+        case 3:
+            System.out.println("three");
+        }
+         
+        System.out.println("switch(2)");
+        switch(2){
+        case 1:
+            System.out.println("one");
+        case 2:
+            System.out.println("two");
+        case 3:
+            System.out.println("three");
+        }
+         
+        System.out.println("switch(3)");
+        switch(3){
+        case 1:
+            System.out.println("one");
+        case 2:
+            System.out.println("two");
+        case 3:
+            System.out.println("three");
+        }
+ 
+    }
+ 
+}
+```
+<br><br>
+실행결과는 다음과 같습니다.
+```
+switch(1)
+one
+two
+three
+switch(2)
+two
+three
+switch(3)
+three
+```
+<br>
+코드를 해석해보면 먼저 첫번째 switch 문에서는 1이 입력되었으므로 case 1에 해당하는 로직 이후의 모든 case들이 실행되고 두번째 switch 문에서는 2부터, 
+세번째 switch 문에서는 3부터 실행되므로 해당 결과가 나온 것입니다.
+<br><br>
+그렇다면 다음과 같이 코드를 바꿔보겠습니다.
+
+```
+public class SwitchDemo {
+ 
+    public static void main(String[] args) {
+         
+        System.out.println("switch(1)");
+        switch(1){
+        case 1:
+            System.out.println("one");
+            break;
+        case 2:
+            System.out.println("two");
+            break;
+        case 3:
+            System.out.println("three");
+            break;
+        }
+         
+        System.out.println("switch(2)");
+        switch(2){
+        case 1:
+            System.out.println("one");
+            break;
+        case 2:
+            System.out.println("two");
+            break;
+        case 3:
+            System.out.println("three");
+            break;
+        }
+         
+        System.out.println("switch(3)");
+        switch(3){
+        case 1:
+            System.out.println("one");
+            break;
+        case 2:
+            System.out.println("two");
+            break;
+        case 3:
+            System.out.println("three");
+            break;
+        }
+ 
+    }
+ 
+}
+```
+<br><br>
+다음코드의 결과는 다음과 같습니다.
+```
+switch(1)
+one
+switch(2)
+two
+switch(3)
+three
+```
+<br>
+
+실행결과가 다음과 같이 나온 이유는 조건문에서 사용할 수 있는 **" break "** 를 만나면 switch 문의 실행이 즉시 중지되기 때문입니다.  
+<br><br>
+이번에는 switch 문에서 사용하는 default: 를 사용해 조금 전의 코드를 변형해보겠습니다.
+```
+public class SwitchDemo {
+ 
+    public static void main(String[] args) {
+         
+        System.out.println("switch(1)");
+        switch(1){
+        case 1:
+            System.out.println("one");
+            break;
+        case 2:
+            System.out.println("two");
+            break;
+        case 3:
+            System.out.println("three");
+            break;
+        default:
+            System.out.println("default");
+            break;
+        }
+         
+        System.out.println("switch(2)");
+        switch(2){
+        case 1:
+            System.out.println("one");
+            break;
+        case 2:
+            System.out.println("two");
+            break;
+        case 3:
+            System.out.println("three");
+            break;
+        default:
+            System.out.println("default");
+            break;
+        }
+         
+        System.out.println("switch(3)");
+        switch(3){
+        case 1:
+            System.out.println("one");
+            break;
+        case 2:
+            System.out.println("two");
+            break;
+        case 3:
+            System.out.println("three");
+            break;
+        default:
+            System.out.println("default");
+            break;
+        }
+         
+        System.out.println("switch(4)");
+        switch(4){
+        case 1:
+            System.out.println("one");
+            break;
+        case 2:
+            System.out.println("two");
+            break;
+        case 3:
+            System.out.println("three");
+            break;
+        default:
+            System.out.println("default");
+            break;
+        }
+ 
+    }
+ 
+}
+```
+<br><br>
+다음코드의 결과는 다음과 같습니다.
+```
+switch(1)
+one
+switch(2)
+two
+switch(3)
+three
+switch(4)
+default
+```
+<br><br>
+실행결과를 보게 되면 마지막 실행은 default 가 나오게 되는데 이는 주어진 케이스가 없는 경우 실행되는 default 문 때문이다.
