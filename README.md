@@ -9,4 +9,5 @@
 [조건문](https://github.com/uuuuuuuk/Java-Egoing/blob/main/Conditional_Statement.md)<br>
 [논리 연산자](https://github.com/uuuuuuuk/Java-Egoing/blob/main/Conditional_Operator.md)<br>
 [반복문](https://github.com/uuuuuuuk/Java-Egoing/blob/main/Loop.md)<br>
-[배열](https://github.com/uuuuuuuk/Java-Egoing/blob/main/Array.md)
+[배열](https://github.com/uuuuuuuk/Java-Egoing/blob/main/Array.md)<br>
+[메소드](https://github.com/uuuuuuuk/Java-Egoing/blob/main/Method.md)
