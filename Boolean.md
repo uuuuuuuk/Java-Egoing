@@ -10,7 +10,7 @@
 좌항과 우항을 비교해서 서로 값이 같다면 true 다르다면 false가 됩니다. **" = "** 이 하나인 대입 연산자와는 다릅니다.  
 <br><br>
 아래는 **" == "** 에 대한 코드 입니다.
-```
+```java
 public class EqualDemo {
  
     public static void main(String[] args) {
@@ -26,7 +26,7 @@ public class EqualDemo {
 ## **2. !=**
 **" ! "** 는 부정을 의미합니다. 즉, '같다'의 부정은 '같지 않다'이므로 이것을 기호로는 **" != "** 로 표시합니다. 아래의 코드는 != 에 대한 코드인데 == 와 정반대의 결과를 보여줍니다.
 <br>
-```
+```java
 public class NotDemo {
  
     public static void main(String[] args) {
@@ -42,7 +42,7 @@ public class NotDemo {
 ## **3. >**
 좌항이 우항보다 크다면 참, 그렇지 않다면 거짓임을 알려주는 연산자입니다. '<'는 반대의 의미로 작다면 참, 그렇지 않다면 거짓을 출력합니다.
 <br>
-```
+```java
 public class GreaterThanDemo {
  
     public static void main(String[] args) {
@@ -57,7 +57,7 @@ public class GreaterThanDemo {
 <br><br>
 ## **3. >=**
 좌항이 우항보다 크거나 같다면 참, 그렇지 않다면 거짓임을 알려주는 연산자입니다. **" <= "** 는 반대의 의미로 작거나 같다면 참, 그렇지 않다면 거짓을 출력합니다.
-```
+```java
 public class GreaterThanOrEqualDemo {
  
     public static void main(String[] args) {
@@ -74,7 +74,7 @@ public class GreaterThanOrEqualDemo {
 ## **4. .equals**
 .equals는 **문자열을 비교할 때 사용하는 메소드** 이지만 연산자로 이해해도 무방합니다.
 
-```
+```java
 public class EqualStringDemo {
  
     public static void main(String[] args) {

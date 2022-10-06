@@ -4,7 +4,7 @@
 
 
 다음은 배열을 생성하는 방법입니다.
-```
+```java
 public class DefineDemo {
  
     public static void main(String[] args) {
@@ -20,7 +20,7 @@ String[] classGroup에서 classGroup은 배열이 담길 변수의 이름입니�
 
 <br><br>
 아래의 코드는 배열에 담겨있는 데이터를 출력하는 방법입니다.
-```
+```java
 public class GetDemo {
  
     public static void main(String[] args) {
@@ -36,7 +36,7 @@ public class GetDemo {
 ```
 <br><br>
 실행결과는 다음과 같습니다.
-```
+```java
 최민욱
 박준서
 안강호
@@ -48,7 +48,7 @@ public class GetDemo {
 <br><br>
 
 또한 배열은 다음과 같이 반복문과의 결합을 통해 효율적인 코드를 만들 수 있습니다.
-```
+```java
 public class ArrayLoopDemo {
  
     public static void main(String[] args) {
@@ -66,7 +66,7 @@ public class ArrayLoopDemo {
 
 <br><br>
 실행결과는 다음과 같습니다.
-```
+```java
 최민욱이(가) 상담을 받았습니다
 박준서이(가) 상담을 받았습니다
 안강호이(가) 상담을 받았습니다
@@ -80,7 +80,7 @@ public class ArrayLoopDemo {
 ## **for-each**
 배열의 내용을 탐색할 때 사용하는 for 문을 좀 더 간편하게 사용할 수 있습니다. 아래 코드를 보겠습니다.
 
-```
+```java
 public class ForeachDemo {
  
     public static void main(String[] args) {
