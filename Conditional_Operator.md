@@ -6,7 +6,7 @@
 && 는 **좌항과 우항의 값이 모두 참(true)일 때 참이 되는 연산자**이고 **" And "** 라고 읽습니다. 
 
 아래 코드를 보겠습니다.
-```
+```java
 public class AndDemo {
  
     public static void main(String[] args) {
@@ -39,7 +39,7 @@ public class AndDemo {
 || 는 **좌우항 중에 하나라도 참이라면 전체가 참이 되는 논리 연산자**이고 **" Or "** 라고 읽습니다.
 
 아래 코드를 보겠습니다.
-```
+```java
 public class OrDemo {
  
     public static void main(String[] args) {
@@ -68,7 +68,7 @@ public class OrDemo {
 ! 는 **Boolean의 값을 역전시키는 역할**을 합니다. 즉 **true에 !를 붙으면 false가 되고 false에 !을 붙이면 true가 되고** 읽을 때는 부정의 의미로 **" not "** 이라고 읽습니다.
 
 아래 코드를 보겠습니다.
-```
+```java
 public class NotDemo {
  
     public static void main(String[] args) {
