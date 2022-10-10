@@ -10,13 +10,14 @@
 <br><br>
 
 ## **메소드의 형식과 선언**
+<br><br>
 메소드는 사실 자바를 처음 시작했을 때부터 사용되고 있었습니다.
 
 ![Untitled](./img/method.png)
 
+<br><br>
 이것이 메소드의 기본 형식입니다. 나머지는 아래 코드를 보겠습니다.
 
-<br><br>
 ```java
 public class MethodDemo1 {
     public static void numbering() {
@@ -45,4 +46,61 @@ public class MethodDemo1 {
 7
 8
 9
+```
+
+<br><br>
+아래 그림을 봅시다.
+
+![Untitled](./img/method2.png)
+<br><br>
+위의 코드는 numbering이라는 이름의 메소드를 정의하고 있습니다. 이 메소드는 main이라는 이름의 메소드 안에서 호출되고 있습니다. 위의 코드는 아래의 코드와 정확하게 동일한 의미를 갖습니다.
+
+<br><br>
+
+![Untitled](./img/method2.png)
+<br><br>
+핑크색으로 표시한 부분의 코드를 numbering이라는 이름의 메소드로 묶어서 외부로 분리한 것입니다. 그리고 메소드 numbering의 로직이 필요할 때 numbering();이라고하면 메소드 numbering의 로직이 실행됩니다.
+
+<br><br>
+
+## **메소드가 없다면**
+<br><br>
+이렇게 메소드에 대한 설명을 들었어도 아직은 메소드에 대한 필요성을 느끼지 못했을 수 도 있습니다. 그렇다면 아래 코드를 보겠습니다.
+
+```java
+public class MethodDemo2 {
+     
+    public static void main(String[] args) {
+        int i = 0;
+        while(i<10){
+            System.out.println(i);
+            i++;
+        }
+         
+        i = 0;
+        while(i<10){
+            System.out.println(i);
+            i++;
+        }
+         
+        i = 0;
+        while(i<10){
+            System.out.println(i);
+            i++;
+        }
+         
+        i = 0;
+        while(i<10){
+            System.out.println(i);
+            i++;
+        }
+         
+        i = 0;
+        while(i<10){
+            System.out.println(i);
+            i++;
+        }
+    }
+ 
+}
 ```

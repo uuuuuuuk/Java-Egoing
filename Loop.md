@@ -5,7 +5,7 @@
 while은 ~할 때 동안 이라는 뜻을 가진 반복문 중 하나로 
 
 while 문의 형식은 다음과 같습니다.
-```
+```java
 while(조건){
     반복 실행 영역
 }
@@ -13,7 +13,7 @@ while(조건){
 <br><br><br>
 해당 방식으로 코드를 하나 만들어보겠습니다.
 
-```
+```java
 public class WhileDemo {
  
     public static void main(String[] args) {
@@ -28,7 +28,7 @@ public class WhileDemo {
 아마 해당 코드는 " Coding Everybody " 라는 출력이 무한 반복 될 것 입니다. 이는 조건이 무조건적으로 참이기 때문입니다. 그렇다면 옳게 된 while 문의 사용법을 보겠습니다.  
 
 <br><br>
-```
+```java
 int i = 0;
 
 while(i<10){         
@@ -44,7 +44,7 @@ while(i<10){
 while문을 보면 반복의 횟수를 지정하기 위해서 while문 외부에 변수 i의 값을 초기화하고, while문 안에서 i의 값을 증가시키고 있습니다. 이것은 코드를 산만하게 할 수 있는데 반복문에서 자주 사용하는 이러한 패턴을 문법적인 형태로 만든 것이 for문입니다.
 
 for 문의 형식은 다음과 같습니다.
-```
+```java
 for(초기화; 종료조건; 반복실행){
     반복적으로 실행될 구문
 }
@@ -64,7 +64,7 @@ for(초기화; 종료조건; 반복실행){
 
 <br><br>
 다음은 위의 while 문을 for 문으로 표현한 코드입니다.
-```
+```java
 public class ForDemo {
  
     public static void main(String[] args) {
@@ -85,7 +85,7 @@ public class ForDemo {
 break 는 **반복문을 중단** 시키고 싶을 때 사용하는 도구입니다.
 
 아래의 코드를 보겠습니다.
-```
+```java
 public class BreakDemo {
  
     public static void main(String[] args) {
@@ -116,7 +116,7 @@ coding everybody 4
 그럼 **실행을 즉시 중단하면서 반복은 지속해가게 하려면** 어떻게 해야 할까요?? 이럴 때 사용하는 도구가 바로 **continue** 입니다.
 
 아래의 코드를 보겠습니다.
-```
+```java
 public class ContinueDemo {
  
     public static void main(String[] args) {
@@ -149,7 +149,7 @@ Coding Everybody 9
 <br><br>
 ## **4. 반복문의 중첩**
 반복문 안에는 반복문이 나타날 수 있습니다. 다음 예제는 반복문 속 반복문, 일명 **중첩 for** 문을 기록한 코드입니다.
-```
+```java
 public class LoopDepthDemo {
  
     public static void main(String[] args) {
