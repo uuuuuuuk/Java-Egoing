@@ -16,7 +16,7 @@
 <br><br>
 해당 기호들을 사용해 코드를 만들어 보겠습니다.
 
-```
+```java
 public class ArithmeticDemo  {
     public static void main(String[] args) {
         
@@ -60,7 +60,7 @@ public class ArithmeticDemo  {
 ## **2. 형변환**
 형변환은 말 그대로 변수가 가지고 있는 고유한 데이터 타입형을 **변경**한다는 말입니다. <br><br>아래 코드를 보겠습니다.
 
-```
+```java
 public class DivisionDemo {
       
     public static void main(String[] args) {
@@ -107,7 +107,7 @@ public class DivisionDemo {
 <br><br>
 해당 기호들을 사용해 코드를 만들어 보겠습니다.
 
-```
+```java
 public class PrePostDemo {
     public static void main(String[] args) {
 
