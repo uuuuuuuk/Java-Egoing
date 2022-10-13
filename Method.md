@@ -104,3 +104,32 @@ public class MethodDemo2 {
  
 }
 ```
+<br>
+이 정도는 복사 붙여넣기를 사용하면 가급적 쉽게 만들 수 있습니다. 하지만 만약 이것을 1000번 해야 한다면? 각각의 로직이 1000 줄에 육박한다면? 그리고 그 내용을 수정해야 한다면? 메소드를 사용한다면 이러한 문제를 현저히 줄일 수 있습니다. 이러한 것을 재활용성이라고 하며 아래 코드에서 자세한 내용을 보겠습니다.
+
+<br><br>
+
+
+```java
+public class MethodDemo3 {
+    public static void numbering() {
+        int i = 0;
+        while (i < 10) {
+            System.out.println(i);
+            i++;
+        }
+    }
+ 
+    public static void main(String[] args) {
+        numbering();
+        numbering();
+        numbering();
+        numbering();
+        numbering();
+    }
+}
+```
+
+<br><br>
+
+## **입력과 출력**
