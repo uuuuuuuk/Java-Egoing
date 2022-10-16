@@ -132,5 +132,5 @@ public class MethodDemo3 {
 
 <br><br>
 
-## **입력과 출력**
+## **매개변수와 인자**
 
