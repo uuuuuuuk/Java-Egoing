@@ -133,4 +133,28 @@ public class MethodDemo3 {
 <br><br>
 
 ## **매개변수와 인자**
+메소드의 입력 값은 매개변수(parameter)를 통해서 이루어집니다. 이전 예제는 0부터 9까지의 숫자를 화면에 출력했지만 만약 필요에 따라서 0부터 4까지 출력하고 싶거나 0부터 8까지 출력하고 싶다면 어떻게 해야 할까요? 이럴때는 입력 값에 따라서 다른 출력 값을 갖도록 메소드를 정의하면 됩니다. 아래 코드를 보겠습니다.
+
+<br>
+
+```java
+public class MethodDemo4 {
+    public static void numbering(int limit) {
+        int i = 0;
+        while (i < limit) {
+            System.out.println(i);
+            i++;
+        }
+    }
+ 
+    public static void main(String[] args) {
+        numbering(5);
+    }
+}
+```
+결과는 0부터 4까지 출력합니다. 메소드를 호출할 때 괄호에 값을 주고 있는데 이 값에 따라서 다른 결과가 출력되고 있습니다.
+
+<br><br>
+
+![Untitled](./img/method2.png)
 
