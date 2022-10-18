@@ -158,3 +158,29 @@ public class MethodDemo4 {
 
 ![Untitled](./img/method2.png)
 
+메소드 numbering의 괄호 안에 위치한 숫자 5는 이 메소드가 호출될 때 limit이라는 변수의 값이 된다. 이 값은 메소드 numbering의 중괄호 안에서만 사용할 수 있다.
+
+<br><br>
+## **복수의 인자**
+만약 메소드로 여러개의 입력값을 전달하고 싶다면 어떻게 해야 할까요? 다음 코드는 위의 예제를 개선해서 출력할 숫자의 시작 값과 마지막 값을 입력값으로 전달하는 코드입니다.
+
+<br>
+
+```java
+public class MethodDemo5 {
+ 
+    public static void numbering(int init, int limit) {
+        int i = init;
+        while (i < limit) {
+            System.out.println(i);
+            i++;
+        }
+    }
+ 
+    public static void main(String[] args) {
+        numbering(1, 5);
+    }
+ 
+}
+```
+ 결과는 1부터 4까지가 출력됩니다. 위와 같이 입력 값을 복수로 받고 싶다면 콤마 뒤에 매개변수를 정의해주면 되고 이 메소스를 호출할 때는 매개변수의 순서대로 인자를 배치하면 됩니다.
